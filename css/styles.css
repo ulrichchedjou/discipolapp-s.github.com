@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('/fonts/GFS_Didot/GFSDidot-Regular.ttf');
+@import url('/fonts/Poppins/Poppins-Black.ttf');
+@import url('/fonts/Poppins/Poppins-BlackItalic.ttf');
+@import url('/fonts/Poppins/Poppins-Bold.ttf');
+@import url('/fonts/Poppins/Poppins-BoldItalic.ttf');
+@import url('/fonts/Poppins/Poppins-ExtraBold.ttf');
+@import url('/fonts/Poppins/Poppins-ExtraBoldItalic.ttf');
+@import url('/fonts/Poppins/Poppins-ExtraLight.ttf');
+@import url('/fonts/Poppins/Poppins-ExtraLightItalic.ttf');
+@import url('/fonts/Poppins/Poppins-Italic.ttf');
+@import url('/fonts/Poppins/Poppins-Light.ttf');
+@import url('/fonts/Poppins/Poppins-LightItalic.ttf');
+@import url('/fonts/Poppins/Poppins-Medium.ttf');
+@import url('/fonts/Poppins/Poppins-MediumItalic.ttf');
+@import url('/fonts/Poppins/Poppins-Regular.ttf');
+@import url('/fonts/Poppins/Poppins-SemiBold.ttf');
+@import url('/fonts/Poppins/Poppins-SemiBoldItalic.ttf');
+@import url('/fonts/Poppins/Poppins-Thin.ttf');
+@import url('/fonts/Poppins/Poppins-ThinItalic.ttf');
+
+html{
+    font-size: 90%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'GFSDidot', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.spot{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/img/holy-bible-with-rays-light-coming-out-ai-generative\(2\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: bgswitch 35s linear infinite;
+    transition: 60s linear ease;
+}
+@keyframes bgswitch{
+    0%{
+        background-image: url('/assets/img/holy-bible-with-rays-light-coming-out-ai-generative\(2\).jpg');
+    }
+    20%{
+        background-image: url('/assets/img/holy-bible-with-rays-light-coming-out-ai-generative\(1\).jpg');
+    }
+    40%{
+        background-image: url('/assets/img/spirituality-religion-hands-folded-prayer-holy-bible-church-concept-faith.jpg');
+    }
+    60%{
+        background-image: url('/assets/img/spirituality-religion-hands-folded-prayer-holy-bible-church-concept-faith\(1\).jpg');
+    }
+    80%{
+        background-image: url('/assets/img/young-african-american-male-sitting-reading-bible-park.jpg');
+    }
+    90%{
+        background-image: url('/assets/img/young-african-american-male-sitting-reading-bible-park.jpg');
+    }
+    110%{
+        background-image: url('/assets/img/young-african-american-male-sitting-reading-bible-park.jpg');
+    }
+    130%{
+        background-image: url('/assets/img/pexels-jessica-lewis-🦋-thepaintedsquare-4200823.jpg');
+    }
+    160%{
+        background-image: url('/assets/img/pexels-jessica-lewis-🦋-thepaintedsquare-4200827.jpg');
+    }
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.main-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    overflow: hidden;
+}
+.main-content h1{
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+.main-content h1 span, span{
+    color: #00bf13;
+}
+.main-content p{
+    font-size: 30px;
+    width: 50%;
+    padding-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.main-content a{
+    font-size: 25px;
+    font-weight: 900;
+    padding: 25px;
+    font-style: italic;
+    font-family: 'GFSDidot', sans-serif;
+}
+/* 
+.main-content button{
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #00bf13;
+    padding: 14px 22px;
+    transform: uppercase;
+    border-radius: 25px;
+    transition: .5s;
+}
+
+.main-content button:hover{
+    padding: 20px;
+    color: #fff;
+}
+*/
+
+/*
+    ===============================================================================
+        Mise en forme du header et de son menu de navigation
+    ===============================================================================
+*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+}
+header #logo_title, footer #logo_title{
+    padding-left: 50px;
+}
+
+.nav-bar ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+.nav-bar ul li a, .main-content a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
+    background-color: #008c0e;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a:hover, .main-content a:hover{
+    color: #fff;
+    background-color: #00bf13;
+    margin: 15px;
+}
+#logo_title, footer #logo_title{
+    display: flex;
+    align-items: center;
+}
+header #logo_title h1, footer #logo_title h1{
+    padding-left: 10px;   
+}
+.nav-bar ul li.active a{
+    color: #00bf13;
+    background-color: #fff;
+    border: 1px solid #00bf13;
+    border-radius: 6px;
+}
+
+/* ========================================================================
+                MISE EN FORME DU MENU HAMBURGER
+    =======================================================================
+*/
+nav .hamburger{
+    display: none ;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    border-radius: 6px;
+    width: 35px;
+    height: 6px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #00bf13;
+}
+
+/*
+    ===========================================================================
+                MISE EN FORME DE LA SECTION #ABOUT-US
+    ===========================================================================
+ */
+
+ #about-us{
+    /* margin-top: 50px; */
+    justify-content: center;
+    align-items: center;
+    background-color: #f2fdf8;
+    padding: 25px;
+    width: auto;
+    height: 100vh;
+
+ }
+ #about-us h1{
+    text-transform: capitalize;
+    padding: 25px;
+    color: #008c0e;
+ }
+ #about-us h1, #about-us p{
+    text-align: center;
+    font-size: 25px;
+    /* width: 50%; */
+    padding-bottom: 10px;
+ }
+
+/* ========================================================================== 
+                    LA MISE EN FORME DU FOOTER 
+=============================================================================
+*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social_link{
+    display: flex;
+    float: right;
+    margin: 10px;
+}
+
+a .social-media{
+    width: 35px;
+    height: 35px;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 720px) {
+    nav .hamburger{
+        display: block;
+    }
+    nav .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    nav .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    nav .hamburger.hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    nav ul li{
+        padding: 20px;
+        height: auto;
+    }
+}
