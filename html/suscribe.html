@@ -42,57 +42,62 @@
                 </div>
             </nav>
         </header>
-        <div class="container">
-            
+        <div class="container">   
             <form action="#">
-                <div class="title">INSCRIPTION</div>
+                <div class="title">INSCRIPTION / REGISTRATION</div>
                 <div class="user-details">
                     <div class="input-box">
-                        <span class="details">Nom Complet</span>
+                        <span class="details">Prenom / Firstname</span>
+                        <input type="text" placeholder="Votre prénom" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Nom / Lastname</span>
+                        <input type="text" placeholder="Votre nom" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Nom Complet / Fullname</span>
                         <input type="text" placeholder="Votre Nom Complet" required>
                     </div>
                     <div class="input-box">
-                        <span class="details">Nom Complet</span>
-                        <input type="text" placeholder="Votre Nom Complet" required>
+                        <span class="details">Ville de residence</span>
+                        <input type="text" placeholder="Ville de Residence" required>
                     </div>
                     <div class="input-box">
-                        <span class="details">Nom Complet</span>
-                        <input type="text" placeholder="Votre Nom Complet" required>
+                        <span class="details">Quartier / Quarter</span>
+                        <input type="" placeholder="Votre Nom Complet" required>
                     </div>
                     <div class="input-box">
-                        <span class="details">Nom Complet</span>
-                        <input type="text" placeholder="Votre Nom Complet" required>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Nom Complet</span>
-                        <input type="text" placeholder="Votre Nom Complet" required>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Nom Utilisateur</span>
-                        <input type="text" placeholder="Votre nom utilisateur" required>
+                        <span class="details">Statut Matrimonial</span>
+                        <select name="statut_matrimonial" id="statut" required>
+                            <option value="statut" selected="--statut--">--statut--</option>
+                            <option value="Marié(e)">Marié(e)</option>
+                            <option value="Célibataire">Célibataire</option>
+                            <option value="Fiancé(e)">Fiancé(e)</option>
+                            <option value="Divorcé(é)">Divorcé(é)</option>
+                        </select>
                     </div>
                     <div class="input-box">
                         <span class="details">Email</span>
-                        <input type="text" placeholder="adresse Email" required>
+                        <input type="email" placeholder="adresse Email" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Numero Telephone</span>
-                        <input type="text" placeholder="Numéro Téléphone" required>
+                        <input type="tel" placeholder="Numéro Téléphone" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Mot de passe</span>
-                        <input type="text" placeholder="Mot de passe" required>
+                        <input type="password" placeholder="Mot de passe" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Confirmer mot de passe</span>
-                        <input type="text" placeholder="Saisir à nouveau" required>
+                        <input type="password" placeholder="Saisir à nouveau" required>
                     </div>
                 </div>
                 <div class="gender-details">
                     <input type="radio" name="gender" id="dot-1">
                     <input type="radio" name="gender" id="dot-2">
 
-                    <span class="gender-title">Gender</span>
+                    <span class="gender-title">Genre / Gender</span>
                     <div class="category">
                         <label for="dot-1">
                             <span class="dot one"></span>
@@ -105,7 +110,7 @@
                     </div>
                 </div>
                 <div class="button">
-                    <input type="submit" name="" value="Register">
+                    <input type="submit" name="register" value="Register">
                 </div>
             </form>
         </div>
