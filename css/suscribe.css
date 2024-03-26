@@ -173,14 +173,14 @@ form .button input:hover{
     background-color: #00bf13;
 }
 @media screen and (maw-width: 720px){
-    .container{
+    .container form{
         min-width: 900px;
         /* width: 100%; */
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
-    .container form{
+    form{
         min-width: 280px;
         width: 100%;
     }
